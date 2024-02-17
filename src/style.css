@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to right, rgb(0, 170, 255), rgb(129, 246, 4));
+}
+.container {
+  width: 300px;
+  height: 400px;
+  border: 1px solid;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 40px;
+  background-color: white;
+  gap: 1px;
+}
+
+.input-numbers {
+  text-align: right;
+  color: aliceblue;
+  font-size: 1.3rem;
+  outline: none;
+  background-color: rgb(38, 50, 46);
+  grid-column: span 4;
+}
+.item:nth-child(2) {
+  grid-column: span 2;
+}
+
+.item:last-child {
+  grid-column: span 2;
+}
+
+.item {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: rgb(181, 248, 255);
+}
+.item:hover {
+  background-color: aliceblue;
+}
